@@ -14,11 +14,16 @@ def info(func):
     return wrapper
 
 
-
-
 @info
-def saludo():
-    print("Hola mi rey, soy alexander")
+def saludo(text):
+    print(str(text))
 
+def run():
+    saludo("Hola, soy carlos")
+
+
+
+if __name__ == "__main__":
+    run()
 
 
